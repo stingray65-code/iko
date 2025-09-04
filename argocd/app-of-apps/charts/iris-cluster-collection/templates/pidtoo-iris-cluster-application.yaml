@@ -10,7 +10,7 @@ apiVersion: argoproj.io/v1alpha1
         server: https://kubernetes.default.svc
       project: default
       source:
-        path: iko/iko/iris_operator_amd-3.8.42.100/pidtoo
+        path: iko/iko/iris_operator_amd-3.8.42.100/samples
         repoURL: {{ .Values.repoURL }}
         targetRevision: {{ .Values.targetRevision }}
       syncPolicy:
