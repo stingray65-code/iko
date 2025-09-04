@@ -1,4 +1,4 @@
-{{ if .Values.addons.pidtooEnabled }}
+##{{ if .Values.addons.pidtooEnabled }}
 apiVersion: argoproj.io/v1alpha1
     kind: Application
     metadata:
@@ -17,4 +17,4 @@ apiVersion: argoproj.io/v1alpha1
         automated: {}
         syncOptions:
         - CreateNamespace=true 
-{{ end }}
+## { end }}
