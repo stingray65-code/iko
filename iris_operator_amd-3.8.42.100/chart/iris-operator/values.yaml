@@ -25,7 +25,8 @@ cleaner:
 ## ref: https://kubernetes.io/docs/concepts/containers/images/#specifying-imagepullsecrets-on-a-pod
 ##
 imagePullSecrets:
-  - name: dockerhub-secret
+  #- name: dockerhub-secret
+   - name: pidtoo-pull-secret
 ## Specify a imagePullPolicy
 ## ref: http://kubernetes.io/docs/user-guide/images/#pre-pulling-images
 ##
