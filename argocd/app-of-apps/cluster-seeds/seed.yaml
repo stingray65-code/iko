@@ -11,13 +11,9 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: iko/iko/argocd/app-of-apps/charts/iris-cluster-collection
+    path: argocd/app-of-apps/charts/iris-cluster-collection
     repoURL: https://github.com/stingray65-code/iko.git
     targetRevision: main
-    helm:
-    parameters:
-    - name: addons.pidtooEnabled
-    value: 'false'
   syncPolicy:
     automated: {}
     syncOptions:
